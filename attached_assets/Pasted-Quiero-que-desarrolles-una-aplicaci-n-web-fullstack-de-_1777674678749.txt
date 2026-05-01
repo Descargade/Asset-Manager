@@ -1,0 +1,106 @@
+Quiero que desarrolles una aplicación web fullstack de nivel profesional tipo SaaS de productividad con inteligencia artificial.
+
+🔹 OBJETIVO:
+Crear una plataforma donde los usuarios puedan gestionar tareas, recibir recomendaciones automáticas con IA y visualizar su productividad en un dashboard moderno.
+
+---
+
+🔹 STACK TECNOLÓGICO:
+- Frontend: React + Vite + TailwindCSS
+- Backend: Node.js + Express
+- Base de datos: PostgreSQL (usar Prisma ORM)
+- Autenticación: JWT (login/registro seguro)
+- Tiempo real: WebSockets (Socket.io)
+- IA: Integración con OpenAI API (o mock si no hay API key)
+
+---
+
+🔹 FUNCIONALIDADES PRINCIPALES:
+
+1. 🔐 AUTENTICACIÓN
+- Registro / Login
+- Protección de rutas
+- Persistencia de sesión
+- Roles: usuario y admin
+
+2. 📋 GESTIÓN DE TAREAS
+- Crear, editar, eliminar tareas
+- Estados: pendiente, en progreso, completada
+- Prioridades
+- Fechas límite
+- Filtros y búsqueda
+
+3. 🧠 ASISTENTE IA
+- Botón "Optimizar mi día"
+- La IA analiza tareas y devuelve:
+  - Orden recomendado
+  - Sugerencias de productividad
+  - Alertas de sobrecarga
+- Chat simple con IA dentro de la app
+
+4. 📊 DASHBOARD PROFESIONAL
+- Gráficos de productividad (usar Recharts)
+- Tareas completadas por día/semana
+- Tiempo estimado vs real
+- Indicadores visuales (KPIs)
+
+5. ⚡ TIEMPO REAL
+- Actualización en vivo de tareas
+- Estado online de usuarios (opcional)
+- Notificaciones en tiempo real
+
+6. 🎨 UI/UX MODERNA
+- Diseño tipo SaaS (inspirado en Notion / Linear)
+- Modo oscuro / claro
+- Sidebar navegable
+- Animaciones suaves (Framer Motion)
+
+7. 🔔 NOTIFICACIONES
+- Alertas por tareas próximas a vencer
+- Confirmación de acciones
+
+---
+
+🔹 BASE DE DATOS (PRISMA MODELO):
+- User
+- Task
+- ActivityLog
+- AIRequestHistory
+
+---
+
+🔹 EXTRAS (IMPORTANTE PARA PORTFOLIO):
+- Deploy ready (configuración para producción)
+- README profesional generado automáticamente
+- Datos mock iniciales
+- Código bien estructurado y comentado
+- Separación clara frontend/backend
+
+---
+
+🔹 FUNCIONALIDADES AVANZADAS (SI ES POSIBLE):
+- Drag & drop para tareas
+- Sistema de etiquetas
+- Exportar tareas a PDF
+- Sistema de log de actividad del usuario
+
+---
+
+🔹 UX CLAVE:
+Cuando el usuario entra:
+- Ve un dashboard atractivo
+- Puede crear tareas rápido
+- Puede presionar "Optimizar mi día" y ver magia de IA
+- Todo responde rápido y en tiempo real
+
+---
+
+🔹 RESULTADO ESPERADO:
+Una aplicación funcional, moderna, visualmente atractiva, lista para portfolio profesional, con código limpio y buenas prácticas.
+
+---
+
+IMPORTANTE:
+- No hagas una app básica, debe parecer un producto real tipo startup.
+- Cuida mucho el diseño visual.
+- Mantén el código modular y escalable.
