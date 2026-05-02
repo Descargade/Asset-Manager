@@ -1,4 +1,4 @@
-import "./lib/api"; // 👈 CRÍTICO
+import "./lib/api"; // 👈 PRIMERA LÍNEA SIEMPRE
 
 import { createRoot } from "react-dom/client";
 import App from "./App";
