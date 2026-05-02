@@ -35,7 +35,9 @@ function OptimizePanel() {
     setDone(false);
 
     try {
-      const res = await fetch("/api/openai/optimize-day", {
+      const API_URL = import.meta.env.VITE_API_URL;
+
+const res = await fetch(`${API_URL}/api/openai/optimize-day`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
       });
