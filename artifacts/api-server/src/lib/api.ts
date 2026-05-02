@@ -5,11 +5,22 @@ const API_URL =
 // guardamos fetch original
 const originalFetch = window.fetch.bind(window);
 
-// override global
-window.fetch = (input: RequestInfo | URL, init?: RequestInit) => {
-  if (typeof input === "string" && input.startsWith("/api")) {
-    input = API_URL + input;
+// override global TOTAL
+window.fetch = async (input: RequestInfo | URL, init?: RequestInit) => {
+  let url = input;
+
+  if (typeof input === "string") {
+    if (input.startsWith("/api")) {
+      url = API_URL + input;
+    }
+  } else if (input instanceof Request) {
+    if (input.url.includes("/api")) {
+      url = input.url.replace(window.location.origin, API_URL);
+    }
   }
 
-  return originalFetch(input, init);
+  return originalFetch(url as any, init);
 };
+
+// 🔥 DEBUG (para ver si funciona)
+console.log("API interceptor activo:", API_URL);
